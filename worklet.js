@@ -1,13 +1,15 @@
 "use strict";
 
-registerPaint("boxbg", class {
+registerPaint("headerHighlight", class {
     /**
+     * Context Options
      * @returns {object} - Returns an object with context options set as key/value pairs.
      */
     static get contextOptions() {
         return { alpha: true };
     }
     /**
+     * Input Properties
      * @returns {string[]} - Returns an array of strings representing CSS custom properties.
      */
     static get inputProperties() {
@@ -15,8 +17,9 @@ registerPaint("boxbg", class {
     }
 
     /**
+     * Paint func
      * @param {CanvasRenderingContext2D} ctx - Canvas drawing context (actually supposed to be PaintRenderingContext2D type, but intellisense does not identify this yet.)
-     * @param {number} size - Paint size property for drawn element.
+     * @param {object} size - Paint size property for drawn element.
      * @param {object} props - Properties with get() method for drawn element.
      */
     paint(ctx, size, props) {

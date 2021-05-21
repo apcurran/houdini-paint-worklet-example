@@ -11,17 +11,10 @@ h3 {
     font-family: sans-serif;
 }
 
-li {
-    background-image: paint(boxbg);
-    --boxColor: hsla(55 90% 60% / 1);
+.fancy {
+    background-image: paint(headerHighlight);
 }
 
-li:nth-of-type(3n) {
-    --boxColor: hsla(155 90% 60% / 1);
-    --widthSubtractor: 20;
-}
-
-li:nth-of-type(3n + 1) {
-    --boxColor: hsla(255 90% 60% / 1);
-    --widthSubtractor: 40;
-}
+h1 { --highColor: hsla(155 90% 60% / .7); }
+h2 { --highColor: hsla(255 90% 60% / .5); }
+h3 { --highColor: hsla(355 90% 60% / .3); }

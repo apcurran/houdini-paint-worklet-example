@@ -13,4 +13,5 @@ h3 {
 
 .header--fancy {
     background-image: paint(headerHighlight);
+    font-size: 2rem;
 }

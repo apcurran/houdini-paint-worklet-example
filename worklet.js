@@ -19,8 +19,8 @@ registerPaint("headerHighlight", class {
     /**
      * Paint func
      * @param {CanvasRenderingContext2D} ctx - Canvas drawing context (actually supposed to be PaintRenderingContext2D type, but intellisense does not identify this yet.)
-     * @param {object} size - Paint size property for drawn element.
-     * @param {object} props - Properties with get() method for drawn element.
+     * @param {object} size - Object with paint sizing properties for drawn element.
+     * @param {object} props - Object with get() method for drawn element.
      */
     paint(ctx, size, props) {
         // Set where to start the highlight and dimensions.

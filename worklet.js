@@ -1,6 +1,21 @@
 "use strict";
 
 registerPaint("headerHighlight", class {
+    /**
+     * @returns {string[]} - Returns an array of strings representing CSS custom properties.
+     */
+    static get inputProperties() {
+        return ["", ""];
+    }
+    /**
+     * @returns {string[]} - Returns an array of strings representing CSS input args.
+     */
+    static get inputArguments() {
+        return [];
+    }
+    /**
+     * @returns {object} - Returns an object with context options set as key/value pairs.
+     */
     static get contextOptions() {
         return { alpha: true };
     }
